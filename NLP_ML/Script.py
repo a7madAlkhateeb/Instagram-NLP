@@ -1,3 +1,4 @@
+from asyncore import write
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -7,3 +8,4 @@ chart_data = pd.DataFrame(
      columns=['a', 'b', 'c'])
 
 st.line_chart(chart_data)
+write('hello')
